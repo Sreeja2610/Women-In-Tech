@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Days Coding Sprint</title>
+    <link rel="stylesheet" href="coding.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            font-family: 'Roboto', sans-serif;
+            justify-content: center;
+            align-items: center;
+            margin-left: 400px;
+           
+        }
+        .hero-img-right {
+            position: fixed;
+            right: 10px;
+            top: 100px;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .hero-img-left {
+            position: fixed;
+            left: 10px;
+            top: 100px;
+            max-width: 400px;
+            padding: 10px;
+            border-radius: 10px;
+            margin:black 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-height: 100vh;
+        }
+        .content {
+            margin-right: 420px; /* To provide space for the fixed image */
+        }
+        .day {
+            margin-bottom: 20px;
+        }
+        .day-label {
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin-top: 10px;
+        }
+        .day-content {
+            display: none;
+            margin-top: 10px;
+        }
+        .day input[type="checkbox"]:checked ~ .day-content {
+            display: block;
+        }
+        .table {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header id="header" class="header d-flex align-items-center fixed-top">
+        <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+            <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="wit.png" alt="">
+                <h1 class="sitename">Women In Tech</h1>
+            </a>
+            <div class="nav-center">
+                <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Code-150</h3>
+            </div>
+            <nav id="navmenu" class="navmenu">
+                <ul class="d-none"></ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+            </nav>
+            <button class="btn-getstarted flex-md-shrink-0" onclick="logout()">Logout</button>
+        </div>
+    </header>
+   
+    <main class="content">
+        <section>
+            
+            
+        <div class="day">
+            <input type="checkbox" id="day1">
+            <label for="day1" class="day-label">Day 1: Arrays & Hashing</label>
+            <div class="day-content">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Top K frequent Elements</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/top-k-frequent-elements/description/" class="solve-btn" target="_blank">Solve</a></td>
+                        </tr>
+                        <tr>
+                            <td>Encode and Decode strings</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/encode-and-decode-strings/description/" class="solve-btn" target="_blank">Solve</a></td>
+                        </tr>
+                        <tr>
+                            <td>Product of Array Except Self</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/product-of-array-except-self/description/" class="solve-btn" target="_blank">Solve</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+            <div class="day">
+                <input type="checkbox" id="day3">
+                <label for="day3" class="day-label">Day 2 : Arrays,Hashing & Two Pointers</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Valid Sudoku</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/valid-sudoku/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Longest Consecutive Sequence</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-consecutive-sequence/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Valid Palindrome</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/valid-palindrome/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>3Sum</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/3sum/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day4">
+                <label for="day4" class="day-label">Day 3 :Sliding Window</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Container With Most Water</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/container-with-most-water/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Best Time To Buy And Sell Stock</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Longest Substring Without Repeating Characters</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Longest Repeating Character Replacement    </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-repeating-character-replacement/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day5">
+                <label for="day5" class="day-label">Day 4 :Sliding Window,Stacks & Linked List</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Minimum Window Substring </td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/minimum-window-substring/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Valid Parentheses</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/valid-parentheses/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td> Find Minimum In Rotated Sorted Array </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Search In Rotated Sorted Array     </td>
+                            <td class="Medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-repeating-character-replacement/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day6">
+                <label for="day6" class="day-label">Day 5 :Linked List</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Reverse LinkedList </td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/reverse-linked-list/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Merge 2 Sorted Lists</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/merge-two-sorted-lists/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Linked List Cycle </td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/linked-list-cycle/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Reorder List   </td>
+                            <td class="Medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/linked-list-cycle/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day7">
+                <label for="day7" class="day-label">Day 6 :Linked List & Trees</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Remove Nth Node From End of List  </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Merge k Sorted Lists</td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/merge-k-sorted-lists/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Invert Binary Tree</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/invert-binary-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Max depth of a Binary Tree</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day8">
+                <label for="day8" class="day-label">Day 7 :Trees</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Same Tree </td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/same-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Subtree of another tree</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/subtree-of-another-tree/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Lowest Common Ancestor of a Binary Search Tree </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Binary Tree Level Order Traversal</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/binary-tree-level-order-traversal/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Validate Binary Search Tree</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/validate-binary-search-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day9">
+                <label for="day9" class="day-label">Day 8 :Trees & Heaps</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Kth Smallest Element In A BST</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Construct Binary Tree From Preorder And Inorder Traversal </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Binary Tree Maximum Path Sum  </td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Serialize And Deserialize Binary Tree</td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Find Median From Data Stream</td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/find-median-from-data-stream/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day10">
+                <label for="day10" class="day-label">Day 9:BackTracking & Tries</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Combination Sum</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/combination-sum/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Word Search</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/word-search/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Implement Trie Prefix Tree</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/implement-trie-prefix-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Design Add And Search Words Data Structure</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/design-add-and-search-words-data-structure/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Word Search II </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/word-search-ii/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day9">
+                <label for="day9" class="day-label">Day 10 :Trees & Heaps</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Kth Smallest Element In A BST</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Construct Binary Tree From Preorder And Inorder Traversal </td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Binary Tree Maximum Path Sum  </td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Serialize And Deserialize Binary Tree</td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Find Median From Data Stream</td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/find-median-from-data-stream/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day12">
+                <label for="day12" class="day-label">Day 11:1D Dynamic Programming</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Climbing Stairs</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/climbing-stairs/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>House Robber</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/house-robber/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>House Robber II</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/house-robber-ii/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Longest Palindromic Substring</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-palindromic-substring/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Palindromic Substrings</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/palindromic-substrings/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Number of Connected Components In An Undirected Graph</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day13">
+                <label for="day13" class="day-label">Day 12:1D Dynamic Programming</label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Decode Ways</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/decode-ways/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Coin Change</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/coin-change/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Max Product Subarray</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/maximum-product-subarray/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Word Break</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/word-break/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Longest Increasing Subsequence</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-increasing-subsequence/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Number of Connected Components In An Undirected Graph</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day14">
+                <label for="day14" class="day-label">Day 13:2D Dynamic Programming,Advanced Graphs & Greedy </label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Alien Dictionary</td>
+                            <td class="hard">Hard</td>
+                            <td><a href="https://leetcode.com/problems/alien-dictionary/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Unique Paths</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/unique-paths/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Longest Common Subsequence</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/longest-common-subsequence/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Maximum Subarray</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/maximum-subarray/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jump Game</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/jump-game/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day15">
+                <label for="day15" class="day-label">Day 14:Intervals </label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Insert Interval</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/insert-interval/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Merge Interval</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/merge-intervals/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Non-Overlapping Intervals</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/non-overlapping-intervals/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Meeting Rooms</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/meeting-rooms/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Meeting Rooms II</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/meeting-rooms-ii/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day16">
+                <label for="day16" class="day-label">Day 15:Math & Geometry </label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Rotate Image</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/rotate-image/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Spiral Matrix</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/spiral-matrix/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Set Matrix Zeroes</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/set-matrix-zeroes/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+            <div class="day">
+                <input type="checkbox" id="day17">
+                <label for="day17" class="day-label">Day 16:Bit Manipulation </label>
+                
+                <div class="day-content">
+                    <table>
+                        <tr>
+                            <th>Problem Name</th>
+                            <th>Difficulty</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td>Number of 1 bits</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/number-of-1-bits/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Counting Bits</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/counting-bits/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Reverse Bits</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/reverse-bits/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Missing Number</td>
+                            <td class="easy">Easy</td>
+                            <td><a href="https://leetcode.com/problems/missing-number/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sum of 2 integers</td>
+                            <td class="medium">Medium</td>
+                            <td><a href="https://leetcode.com/problems/sum-of-two-integers/description/" class="solve-btn" target="_blank">Solve</button></td>
+                        </tr>
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img-right" data-aos="zoom-out">
+            <img src="coding.png" class="img-fluid animated" alt="">
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img-left" data-aos="zoom-out">
+            <img src="coding1.png" class="img-fluid animated" alt="">
+        </div>
+
+        </main>
+
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    /* Your CSS styles here */
+  </style>
+  <title>Sign Up Page</title>
+</head>
+<body>
+  <div class="signup">
+    <form id="signup-form">
+      <div class="group head">
+        <h2>Create Account,</h2>
+        <p>Sign Up To Get Started</p>
+      </div>
+
+      <div class="group">
+        <label for="name-field">Full Name</label><br />
+        <input type="text" name="name" id="name-field" required />
+      </div>
+
+      <div class="group">
+        <label for="email-field">Email</label><br />
+        <input type="email" name="email" id="email-field" required />
+        <div class="error-message" id="email-error"></div>
+      </div>
+
+      <div class="group">
+        <label for="username-field">Username</label><br />
+        <input type="text" name="username" id="username-field" required />
+        <div class="error-message" id="username-error"></div>
+      </div>
+
+      <div class="group">
+        <label for="password-field">Password</label><br />
+        <input type="password" name="password" id="password-field" required />
+        <span class="fa fa-fw fa-eye field-icon toggle-password" toggle="#password-field"></span>
+        <div class="error-message" id="password-error"></div>
+      </div>
+
+      <div class="group">
+        <label for="confirm-password-field">Confirm Password</label><br />
+        <input type="password" name="confirm-password" id="confirm-password-field" required />
+        <span class="fa fa-fw fa-eye field-icon toggle-password" toggle="#confirm-password-field"></span>
+        <div class="error-message" id="confirm-password-error"></div>
+      </div>
+
+      <div class="group">
+        <button type="submit"><span>Sign Up</span></button>
+      </div>
+
+      <div class="group sign-in-link">
+        <p>Already have an account? <a href="login.html">Sign In</a></p>
+      </div>
+    </form>
+  </div>
+
+  <script src="firebase.js"></script>
+  <script src="signup.js"></script>
+</body>
+</html>
